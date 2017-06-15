@@ -1,0 +1,25 @@
+<resources>
+    <string name="nome_app">s2Pet</string>
+    <string name="title_activity_login">Logar</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar ou registrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_email">Este endereço de e-mail é inválido</string>
+    <string name="error_invalid_password">Esta senha é muito curta</string>
+    <string name="error_incorrect_password">Esta senha está incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="permission_rationale">"Permissões de contatos são necessários para o fornecimento de e-mail conclusões." </string>
+    <string name="title_activity_menu_principal">Menu Principal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configuração</string>
+    <string name="title_activity_menu_lateral">MenuLateral</string>
+
+
+
+</resources>

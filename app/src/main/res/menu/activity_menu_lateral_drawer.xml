@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cad_dono"
+            android:icon="@drawable/cad_dono"
+            android:title="Cadastro" />
+        <item
+            android:id="@+id/cad_pet"
+            android:icon="@drawable/cad_pet"
+            android:title="Meu Pet" />
+        <item
+            android:id="@+id/vacina"
+            android:icon="@drawable/vacina"
+            android:title="Vacina" />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/login"
+            android:title="Login" />
+    </group>
+
+    <item android:title="Me ajuda">
+        <menu>
+            <item
+                android:id="@+id/compartilhar"
+                android:icon="@drawable/compartilhar"
+                android:title="Compartilhar" />
+            <item
+                android:id="@+id/contato"
+                android:icon="@drawable/contato"
+                android:title="Contato" />
+        </menu>
+    </item>
+
+</menu>
