@@ -20,6 +20,11 @@
     <string name="action_settings">Configuração</string>
     <string name="title_activity_menu_lateral">MenuLateral</string>
 
-
+    <array name="spinner">
+        <item>Agora</item>
+        <item>Trimestral</item>
+        <item>Semestral</item>
+        <item>Anual</item>
+    </array>
 
 </resources>

@@ -118,7 +118,25 @@
         android:onClick="salvarDados"
         android:id="@+id/button2" />
 
-    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Perfil"
+        android:onClick="irPerfil"
+        android:id="@+id/btnPerfil"
+        android:layout_toRightOf="@id/button2"/>
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/lbllista"
+        android:layout_alignStart="@+id/lbllista">
+
+    </Spinner>
 
 
 </RelativeLayout>

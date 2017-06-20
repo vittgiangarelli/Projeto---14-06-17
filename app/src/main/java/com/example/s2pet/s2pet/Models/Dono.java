@@ -14,12 +14,14 @@ public class Dono {
         private String cpf;
         private String email;
         private String nomePet;
+        private String dataPeriodo;
         private List<String> listaVacina;
 
         public Dono(){}
 
-    public Dono(String cpf, String nomeDono, String email, String nomePet, List<String> listaVacina) {
+    public Dono(String cpf, String nomeDono, String email, String nomePet, String dataPeriodo, List<String> listaVacina) {
         this.cpf = cpf;
+        this.dataPeriodo = dataPeriodo;
         this.nomeDono = nomeDono;
         this.email = email;
         this.nomePet = nomePet;
@@ -34,6 +36,7 @@ public class Dono {
             resultado.put("email", email);
             resultado.put("nomePet", nomePet);
             resultado.put("listaVacina", listaVacina);
+            resultado.put("dataPeriodo", dataPeriodo);
             return resultado;
         }
 
