@@ -12,14 +12,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.s2pet.s2pet.Models.Dono;
+import com.example.s2pet.s2pet.Models.EnviaEmail;
 import com.example.s2pet.s2pet.R;
 import com.example.s2pet.s2pet.Utils.Referencias;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import org.apache.commons.mail.EmailException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,7 +42,6 @@ public class Cadastro_Dono extends AppCompatActivity {
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
 
 
     @Override
@@ -73,7 +71,7 @@ public class Cadastro_Dono extends AppCompatActivity {
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
     public void salvarDados(View view) {
@@ -99,10 +97,10 @@ public class Cadastro_Dono extends AppCompatActivity {
         startActivity(perfil);
     }
 
-    public void adicionarVacina(View v) {
+    public void adicionarVacina(View v) throws EmailException {
         String nome = vacina.getText().toString();
-
-        listaVacinas.add(nome);
+        String periodo = dropdown.getSelectedItem().toString();
+        listaVacinas.add(nome+ " "+ periodo);
         String listaNomes = "";
 
         if (!listaVacinas.isEmpty()) {
@@ -114,12 +112,15 @@ public class Cadastro_Dono extends AppCompatActivity {
             vacina.setText("");
         }
 
+        EnviaEmail email = new EnviaEmail();
+        email.enviarEmail();
     }
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
+ /*
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
                 .setName("Cadastro_Dono Page") // TODO: Define a title for the content shown.
@@ -151,5 +152,6 @@ public class Cadastro_Dono extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }
+    */
 }
 

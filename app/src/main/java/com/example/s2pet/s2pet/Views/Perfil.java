@@ -17,6 +17,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.SimpleEmail;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,5 +114,6 @@ public class Perfil extends AppCompatActivity {
 
         reference.addValueEventListener(valueEventListener); // esta linha encerra a conexão
     }
+
 }
 

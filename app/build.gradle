@@ -31,7 +31,6 @@ dependencies {
     //TODO 3 - adicionar esta linha que faz referêcia a bibioteca principal do Firebase
     compile 'com.google.firebase:firebase-database:9.6.1'
     //TODO 4 - adicionar esta linha que faz referêcia a biblioteca de database do Firebase
-    compile 'com.google.android.gms:play-services-appindexing:9.6.1'
     compile 'org.apache.commons:commons-email:1.4'
 }
 apply plugin: 'com.google.gms.google-services' //TODO 5 - adicionar esta linha que faz referêcia ao plugin de conexão com o Firebase
