@@ -11,4 +11,31 @@
     tools:context="com.example.s2pet.s2pet.Views.Contato">
 
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deseja receber notificação por SMS?"
+        android:id="@+id/txt1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sim"
+        android:id="@+id/btnSim"
+        android:layout_below="@id/txt1"
+        android:onClick="enviaSms"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não"
+        android:id="@+id/btnNao"
+        android:layout_below="@+id/txt1"
+        android:layout_toRightOf="@+id/btnSim"
+        android:layout_toEndOf="@+id/btnSim"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:onClick="home"/>
 </RelativeLayout>

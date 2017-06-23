@@ -89,7 +89,8 @@ public class Cadastro_Dono extends AppCompatActivity {
         listaVacinas.clear();
         lista.setText("");
 
-
+        Intent enviar = new Intent(Cadastro_Dono.this, Contato.class);
+        startActivity(enviar);
     }
 
     public void irPerfil(View v) {
@@ -97,7 +98,7 @@ public class Cadastro_Dono extends AppCompatActivity {
         startActivity(perfil);
     }
 
-    public void adicionarVacina(View v) throws EmailException {
+    public void adicionarVacina(View v) /*throws EmailException*/ {
         String nome = vacina.getText().toString();
         String periodo = dropdown.getSelectedItem().toString();
         listaVacinas.add(nome+ " "+ periodo);
@@ -112,8 +113,20 @@ public class Cadastro_Dono extends AppCompatActivity {
             vacina.setText("");
         }
 
+        /*
         EnviaEmail email = new EnviaEmail();
-        email.enviarEmail();
+        email.enviarEmail(); */
+    }
+
+    public void sms(View v)
+    {
+
+
+        Intent smsIntent = new Intent(android.content.Intent.ACTION_VIEW);
+        smsIntent.setType("marcos paulo gay");
+        smsIntent.putExtra("address",976490236);
+        smsIntent.putExtra("sms_body","your desired message");
+        startActivity(smsIntent);
     }
 
     /**

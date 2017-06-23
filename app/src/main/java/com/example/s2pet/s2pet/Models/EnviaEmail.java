@@ -20,7 +20,7 @@ public class EnviaEmail {
         email.setFrom("vittgiangarelli03@gmail.com");
         email.setSubject("Teste enviar email");
         email.setMsg("Enviou carai");
-        email.addTo("wfelipewill@hotmail.com");
+        email.addTo("aguinaldo.almeida@outlook.com");
         email.send();
 
 
